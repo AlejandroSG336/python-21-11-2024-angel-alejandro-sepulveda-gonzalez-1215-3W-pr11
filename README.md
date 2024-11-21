@@ -2,10 +2,12 @@
 
 1-
 
-print("sepulveda gonzalez angel alejandro,1215,3W")
-print("")
+    print("sepulveda gonzalez angel alejandro,1215,3W")
+    print("")
 # Ejercicio 1: Clase Persona
-class Persona:
+
+    class Persona:
+
     def __init__(self, nombre="", edad=0, dni=""):
         self.nombre = nombre
         self.edad = edad
@@ -48,12 +50,12 @@ class Persona:
         return self.edad >= 18
 
 # Ejemplo de uso
-try:
-    persona = Persona(nombre="Juan", edad=25, dni="12345678Z")
-    print(persona.mostrar())
-    print("Es mayor de edad:", persona.esMayorDeEdad())
-except ValueError as e:
-    print(e)
+   try:
+     persona = Persona(nombre="Juan", edad=25, dni="12345678Z")
+       print(persona.mostrar())
+       print("Es mayor de edad:", persona.esMayorDeEdad())
+    except ValueError as e:
+       print(e)
 
 ![image](https://github.com/user-attachments/assets/0b6464c3-c8e2-4216-90b6-14b0efb1b98d)
 ![image](https://github.com/user-attachments/assets/c02388bd-764a-475c-8b32-ec5e0e3a952d)
