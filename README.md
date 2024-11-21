@@ -64,10 +64,10 @@
 
 2-
 
-print("sepulveda gonzalez angel alejandro,1215,3W")
-print("")
+     print("sepulveda gonzalez angel alejandro,1215,3W")
+     print("")
 # Ejercicio 2: Clase Cuenta
-class Persona:
+     class Persona:
     def __init__(self, nombre="", edad=0, dni=""):
         self.nombre = nombre
         self.edad = edad
@@ -134,7 +134,7 @@ class Cuenta:
 
 
 # Ejemplo de uso
-try:
+    try:
     persona1 = Persona("Juan Pérez", 30, "12345678A")
     cuenta = Cuenta(persona1, 500.0)
 
@@ -142,7 +142,7 @@ try:
     cuenta.ingresar(200)     # Ingresar 200
     cuenta.retirar(100)      # Retirar 100
     print(cuenta.mostrar())  # Mostrar datos actualizados
-except Exception as e:
+     except Exception as e:
     print(f"Error: {e}")
 
 ![image](https://github.com/user-attachments/assets/ae431f1b-2925-44b5-aec4-2a18e0f5641e)
@@ -152,11 +152,11 @@ except Exception as e:
 
 3-
 
-print("sepulveda gonzalez angel alejandro,1215,3W")
-print("")
+    print("sepulveda gonzalez angel alejandro,1215,3W")
+    print("")
 # Ejercicio 3: Clase CuentaJoven 
 # Clase Persona
-class Persona:
+    class Persona:
     def __init__(self, nombre="", edad=0, dni=""):
         self.nombre = nombre
         self.edad = edad
@@ -200,8 +200,8 @@ class Persona:
 
 
 # Clase Cuenta
-class Cuenta:
-    def __init__(self, titular, cantidad=0.0):
+     class Cuenta:
+      def __init__(self, titular, cantidad=0.0):
         if not isinstance(titular, Persona):
             raise ValueError("El titular debe ser una instancia de la clase Persona.")
         self.titular = titular
@@ -223,7 +223,7 @@ class Cuenta:
 
 
 # Clase CuentaJoven
-class CuentaJoven(Cuenta):
+    class CuentaJoven(Cuenta):
     def __init__(self, titular, cantidad=0.0, bonificacion=0.0):
         super().__init__(titular, cantidad)
         self.bonificacion = bonificacion
@@ -252,7 +252,7 @@ class CuentaJoven(Cuenta):
                 f"Cantidad: {self.cantidad:.2f}, Bonificación: {self.bonificacion}%")
 
 # Ejemplo de uso
-try:
+    try:
     persona1 = Persona("Ana López", 22, "87654321B")  # Titular válido
     cuenta_joven = CuentaJoven(persona1, 1500.0, 5.0)  # Creación de Cuenta Joven
 
@@ -264,7 +264,7 @@ try:
     persona2 = Persona("Carlos Sánchez", 30, "12345678C")  # Titular no válido
     cuenta_joven_no_valida = CuentaJoven(persona2, 2000.0, 3.0)
     cuenta_joven_no_valida.retirar(100)  # Esto generará un error
-except Exception as e:
+    except Exception as e:
     print(f"Error: {e}")
 
 ![image](https://github.com/user-attachments/assets/a6a1c79f-3333-49a0-89ba-8eafeb379df9)
